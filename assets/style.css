@@ -1,0 +1,24 @@
+:root {
+  --color-principal: #1e3a8a;
+  --color-fondo: #f8fafc;
+  --color-de-textbox: #1e293b;
+  --color-alternativo: #10204f;
+  --textbox-sin-borde: var(--color-de-textbox);
+  --fondo-principal: #0f0f11;
+  --surface-tarjetas: #1a1a1e;
+  --borderline: #27272a;
+  --primary: #f59e0b;
+  --text-main: #f9fafb;
+  --text-mute: #9ca3af;
+
+  --font-family: "Montserrat", sans-serif;
+  --second-family: "Golos Text", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--fondo-principal);
+  color: var(--text-main);
+  margin: 0;
+  padding: 0;
+}
