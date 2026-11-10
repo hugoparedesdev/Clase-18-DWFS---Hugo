@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stand Up - CDE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'fondo-principal': '#0f0f11',
+            'surface-tarjetas': '#1a1a1e',
+            'borderline': '#27272a',
+            'primary': '#f59e0b',
+            'text-main': '#f9fafb',
+            'text-mute': '#9ca3af',
+            'color-fondo': '#f59e0b',
+          },
+          fontFamily: {
+            'montserrat': ['Montserrat', 'sans-serif'],
+            'golos': ['Golos Text', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-fondo-principal text-text-main font-montserrat antialiased">
+
+  <div class="w-full min-h-screen bg-fondo-principal flex flex-col justify-start items-center gap-7 overflow-x-hidden">
+    
+    <!-- EL NAVBAR -->
+    <header class="w-full h-32 px-10 md:px-20 py-8 bg-surface-tarjetas flex justify-between items-center gap-8 border-b border-borderline">
+      <img class="w-28 h-20 object-contain" src="/img/logostandupcde.jpg" alt="Logoprincipal" />
+      <nav class="hidden md:flex items-center gap-10">
+        <a href="#shows" class="text-white text-base font-black hover:text-primary transition">PROXIMOS SHOWS</a>
+        <a href="#comediantes" class="text-white text-base font-black hover:text-primary transition">COMEDIANTES</a>
+        <a href="#nosotros" class="text-white text-base font-black hover:text-primary transition">QUIENES SOMOS</a>
+        <a href="#contacto" class="text-white text-base font-black hover:text-primary transition">CONTACTO</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <img class="w-6 h-7 cursor-pointer" src="/img/icofacebook.png" alt="Facebook" />
+        <img class="w-6 h-7 cursor-pointer" src="/img/icoinstagram.png" alt="Instagram" />
+        <img class="w-6 h-7 cursor-pointer" src="/img/icowhatsapp.png" alt="whatsapp" />
+      </div>
+    </header>
+
+    <!-- EL HERO SECTION -->
+    <section class="w-full max-w-[1440px] px-10 md:px-20 py-16 bg-fondo-principal flex flex-col lg:flex-row justify-center items-center gap-10">
+      <div class="w-full lg:w-1/2 flex flex-col justify-start items-start gap-8">
+        <h1 class="text-color-fondo text-5xl font-black leading-tight">STAND UP CDE</h1>
+        <p class="text-text-main text-base font-normal font-golos leading-relaxed">
+          Somos una productora de Stand UP nacida en el año 2014, convirtiéndonos en una de las productoras más grandes del género a nivel nacional. <br/><br/>
+          Trabajamos con extraordinarios comediantes. Con ellos hemos recorrido varias ciudades del Paraguay y las risas llegaron incluso a los países de las tres fronteras. Somos Stand Up CDE y nos gusta lo que hacemos.
+        </p>
+        <a href="#shows" class="px-6 py-3 bg-primary rounded-xl inline-flex justify-center items-center gap-2.5 hover:opacity-90 transition">
+          <span class="text-center text-text-main text-base font-bold">PRÓXIMOS SHOWS</span>
+        </a>
+      </div>
+      <div class="w-full lg:w-1/2 flex justify-center">
+        <img class="w-full max-w-[676px] h-auto object-cover rounded-2xl" src="/img/fondo4amigos.jpg" alt="Hero Stand Up CDE" />
+      </div>
+    </section>
+
+    <!-- SECCION PRÓXIMOS SHOWS -->
+    <section id="shows" class="w-full max-w-[1440px] p-8 md:p-16 flex flex-col justify-start items-center gap-10">
+      <h2 class="text-center text-white text-3xl font-bold">PROXIMOS SHOWS</h2>
+      
+      <div class="w-full flex flex-wrap justify-center items-center gap-8">
+        
+        <!-- Card 1 -->
+        <article class="w-96 p-4 bg-surface-tarjetas rounded-2xl border border-text-mute flex flex-col justify-center items-center gap-4">
+          <img class="w-full h-80 object-cover rounded-xl" src="/img/desdemiinterior.jpg" alt="Desde Mi Interior" />
+          <div class="text-center text-white text-sm font-medium">SABADO 07 NOV - 21:00H</div>
+          <div class="text-center">
+            <h3 class="text-white text-2xl font-black leading-tight">DESDE MI INTERIOR</h3>
+            <span class="text-white text-base font-black">UNIPERSONAL - IVAN LOPEZ</span>
+          </div>
+          <div class="text-center text-white text-sm font-semibold">CENTRO CULTURAL MANGORE CIUDAD DEL ESTE</div>
+          <button class="w-full px-6 py-3 bg-primary rounded-xl hover:opacity-90 transition">
+            <span class="text-center text-text-main text-base font-bold">COMPRAR ENTRADAS</span>
+          </button>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="w-96 p-4 bg-surface-tarjetas rounded-2xl border border-text-mute flex flex-col justify-center items-center gap-4">
+          <img class="w-full h-80 object-cover rounded-xl" src="/img/japuka.jpg" alt="Japuka Fest" />
+          <div class="text-center text-white text-sm font-medium">VIERNES 18 Y SABADO 19 DIC - 21:00H</div>
+          <div class="text-center">
+            <h3 class="text-white text-2xl font-black leading-tight">JAPUKA FEST</h3>
+            <span class="text-white text-base font-black">FESTIVAL DE COMEDIA</span>
+          </div>
+          <div class="text-center text-white text-sm font-semibold">CENTRO CULTURAL MANGORE CIUDAD DEL ESTE</div>
+          <button class="w-full px-6 py-3 bg-primary rounded-xl hover:opacity-90 transition">
+            <span class="text-center text-text-main text-base font-bold">COMPRAR ENTRADAS</span>
+          </button>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="w-96 p-4 bg-surface-tarjetas rounded-2xl border border-text-mute flex flex-col justify-center items-center gap-4">
+          <img class="w-full h-80 object-cover rounded-xl" src="/img/brasiguayos.jpg" alt="Brasiguayo" />
+          <div class="text-center text-white text-sm font-medium">SABADO 15 ENE 2027 - 21:00H</div>
+          <div class="text-center">
+            <h3 class="text-white text-2xl font-black leading-tight">BRASIGUAYO</h3>
+            <span class="text-white text-base font-black">SHOW DE HUMOR</span>
+          </div>
+          <div class="text-center text-white text-sm font-semibold">CAMPO VIA SPORT BAR</div>
+          <button class="w-full px-6 py-3 bg-primary rounded-xl hover:opacity-90 transition">
+            <span class="text-center text-text-main text-base font-bold">COMPRAR ENTRADAS</span>
+          </button>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="w-full h-32 px-10 md:px-20 py-8 bg-surface-tarjetas flex justify-between items-center gap-8 border-t border-borderline">
+      <img class="w-28 h-20 object-contain" src="/img/logostandupcde.jpg" alt="Logo Footer" />
+      <div class="text-center text-white text-base font-black">TODOS LOS DERECHOS RESERVADOS</div>
+      <div class="flex items-center gap-4">
+         <img class="w-6 h-7 cursor-pointer" src="/img/icofacebook.png" alt="Facebook" />
+        <img class="w-6 h-7 cursor-pointer" src="/img/icoinstagram.png" alt="Instagram" />
+        <img class="w-6 h-7 cursor-pointer" src="/img/icowhatsapp.png" alt="whatsapp" />
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
