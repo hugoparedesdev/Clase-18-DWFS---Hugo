@@ -147,3 +147,12 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+
+# Archivos del sistema operativo Mac
+.DS_Store
+
+# Entornos y dependencias locales (por si usas Node más adelante)
+node_modules/
+
+# Archivos temporales o de editores
+.vscode/
